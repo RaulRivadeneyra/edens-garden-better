@@ -4,9 +4,12 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&family=Rozha+One&display=swap');
+
 html {
     background-color: #f9f9f9;
-}
+    font-size: 100%;
+} /*16px*/
 
 body {  
     font-family: 'Rozha One', serif;
