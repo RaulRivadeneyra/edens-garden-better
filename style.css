@@ -182,6 +182,49 @@ nav {
   background-size:cover;
   background-repeat:no-repeat;
 }
+.property-image2
+{
+  height:14.5em;
+  width:14em;
+  position:Absolute;
+  top:0px;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  background-color: #DD9F73;
+  text-align: center;
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+.property-image3
+{
+  height:14.5em;
+  width:14em;
+  position:Absolute;
+  top:0px;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  background-color: #A6B6A4;
+  text-align: center;
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+.property-image4
+{
+  height:14.5em;
+  width:14em;
+  position:Absolute;
+  top:0px;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  background-color: #A0C9FA;
+  text-align: center;
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+
 
 /* Bottom Card Section */
 
@@ -272,4 +315,17 @@ nav {
 .property-image img{
     padding-top: 1rem;
     width: 90%;
+}
+.property-image2 img{
+    padding-top: 2.2rem;
+    width: 90%;
+}
+
+.property-image3 img{
+    padding-top: 0.5rem;
+    height: 100%;
+}
+
+.property-image4 img{
+    width: 93%;
 }
