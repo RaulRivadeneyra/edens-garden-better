@@ -4,7 +4,70 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Nunito', sans-serif;
+html {
+    background-color: #f9f9f9;
+}
+
+body {  
     font-family: 'Rozha One', serif;
 }
+
+header {
+
+    width: 100%;
+    text-align: center;
+    color: white;
+    transition: .4s;
+}
+
+
+
+.logo {
+    width: 100%;
+    height: 500px;
+    background-color: orchid;
+    align-items: center;
+}
+
+
+.header-buttons{
+    margin-top: 1.8rem;
+    margin-right: 3rem;
+    float: right;
+}
+
+
+nav {
+    background-color: black;
+}
+.nav-link {
+    display: inline-block;
+    line-height: .5;
+    text-decoration: none;
+    
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.333rem;
+    font-weight: 700;
+    color: #f9f9f9;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.nav-link:hover{
+    color: #E3C19D;
+}
+
+
+
+
+
