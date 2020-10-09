@@ -36,6 +36,29 @@ header {
     float: right;
 }
 
+.profile-button{
+    width: 40px;
+    height:40px;
+    display:inline-block;
+    transition: 0.2s;
+    background:transparent url('./images/Iconly/Light-outline/Profile.svg') center top no-repeat;
+}
+
+.cart-button{
+    width: 44px;
+    height:40px;
+    display:inline-block;
+    transition: 0.2s;
+    background:transparent url('./images/Iconly/Light-outline/Buy.svg') center top no-repeat;
+}
+
+.profile-button:hover{
+    background: url('./images/Iconly/Light-outline/Profile-Hover.svg')
+}
+
+.cart-button:hover{
+    background: url('./images/Iconly/Light-outline/Buy-Hover.svg')
+}
 
 nav {
     background-color: black;
