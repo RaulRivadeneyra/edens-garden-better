@@ -1,18 +1,44 @@
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
+
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&family=Rozha+One&display=swap');
-
+@media screen and (prefers-reduced-motion: no-preference) {
+    html,
+    body {
+      scroll-behavior: smooth;
+    }
+  }
 html {
     background-color: #f9f9f9;
     font-size: 100%;
 } /*16px*/
 
-body {  
+
+
+h1{
+    margin: 0;
     font-family: 'Rozha One', serif;
+    font-size: 4.209rem;
+    font-weight: 400;
+    line-height: 1.15;
+}
+
+h3{
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.333rem;
+    font-weight: 700;
+    color: #4F635E;
+}
+
+.title{
+    padding-left: 9rem;
+    padding-top: 3.4rem;
+    padding-right: 30rem;
+}
+
+.title2{
+    padding-top: 6rem;
+    text-align: center;
 }
 
 header {
@@ -69,7 +95,6 @@ nav {
 .nav-link {
     display: inline-block;
     line-height: .5;
-    text-decoration: none;
     
     margin-left: 1.5rem;
     margin-right: 1.5rem;
@@ -93,7 +118,158 @@ nav {
     color: #E3C19D;
 }
 
+.seasonal-sensation{
+    margin: 0;
+    padding: 0;
+    background-image: url('/images/SeasonalBG.svg');
+    width: 100%;
+    height: 895px;
+}
+.benefits{
+    margin: 0;
+    padding: 0;
+    background-image: url('/images/BenefitsBG.svg');
+    width: 100%;
+    height: 1376px;
+}
+
+.center
+{
+    height:70vh;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* End Non-Essential  */
+
+.property-card
+{
+    margin: 2rem;
+  height:18em;
+  width:14em;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+  -ms-flex-direction:column;
+  flex-direction:column;
+  position:relative;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-radius:16px;
+  overflow:hidden;
+
+}
+/* ^-- The margin bottom is necessary for the drop shadow otherwise it gets clipped in certain cases. */
+
+/* Top Half of card, image. */
+
+.property-image
+{
+  height:14.5em;
+  width:14em;
+  position:Absolute;
+  top:0px;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  background-color: #ABB859;
+  text-align: center;
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+
+/* Bottom Card Section */
+
+.property-description
+{
+  background-color: #f9f9f9;
+  height:3.5em;
+  width:14em;
+  position:absolute;
+  bottom:0em;
+  
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  text-align:center;
+}
+
+/* Property Cards Hover States */
+
+.property-card:hover .property-description
+{
+  height:6em;
+
+}
+.property-card:hover .property-image
+{
+  height:12em;
+}
+
+.pd-text{
+    padding: 0.55em 1em;
+    margin-bottom: 0.25rem;
+    flex: 1;
+}
+
+.pd-text h5{
+    text-align: left;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #000000;
+}
+.pd-text p{
+    text-align: left;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #4F635E;
+}
 
 
+.pd-button{
+    padding: 0.2rem 1rem;
+    border-radius: 0.4rem;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #000000;
+    text-decoration: none;
+    background-color: #BFD9E3;
+    transition: 0.2s;
+}
 
+.pd-button:hover{
+    background-color: #E3C19D;
+}
 
+.pd-inline{
+    display: flex;
+}
+
+.star-button{
+    
+    width: 40px;
+    height:40px;
+    margin-top: .45rem;
+    margin-right: .45rem;
+    display:inline-block;
+    transition: 0.2s;
+    background:transparent url('./images/ProductCard/Simple/Iconly/Light-outline/Star-Normal.svg') center top no-repeat;
+}
+
+.star-button:hover{
+    background: url('./images/ProductCard/Simple/Iconly/Light-outline/Star.svg')
+}
+.property-image img{
+    padding-top: 1rem;
+    width: 90%;
+}
